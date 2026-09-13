@@ -4,6 +4,7 @@
 -- Fecha: [13/09/2026]
 -- ══════════════════════════════════════════
 
+
 -- Consulta 1: Exploración general de la tabla sales
 -- SELECT * es útil para explorar rápidamente la estructura
 -- y conocer todas las columnas de una tabla.
@@ -17,15 +18,15 @@ FROM sales;
 
 -- Consulta 2: Selección de columnas específicas para finanzas
 -- El equipo de finanzas necesita identificar al cliente,
--- el producto y el monto de la operación.
+-- el producto y el monto.
 
 SELECT customer_id, product_id, total_amount
 FROM sales;
 
 
 -- Consulta 3: Selección con alias en español para stakeholders
--- Se utilizan alias para transformar nombres técnicos
--- en nombres más fáciles de interpretar.
+-- Se utilizan alias para presentar nombres técnicos
+-- de manera más clara para usuarios no técnicos.
 
 SELECT
     order_date AS fecha_pedido,
